@@ -6,22 +6,22 @@
   </head>
   <body>
     <header class="main_header">
-	 <div class="index_logo">
+	 <div class="container">
+	 <div class="header_logo">
         <img src="img/index-logo.png" width="155" height="70" alt="«Nёrd`s»">
      </div>
-      <div class="container">
         <nav class="main_navigation">
           <ul>
-            <li>
+            <li class="main_navigation_item">
               <a href="#">Студия</a>
             </li>
-            <li>
+            <li class="main_navigation_item">
               <a href="#">Клиенты</a>
             </li>
-            <li>
+            <li class="main_navigation_item">
               <a href="#">Магазин</a>
             </li>
-            <li>
+            <li class="main_navigation_item">
               <a href="#">Контакты</a>
             </li>
           </ul>
@@ -31,50 +31,53 @@
         </div>
       </div>
     </header>
-	 <main class="container">
+	 <main>
+	 <div class="container">
 	  <div class="main_slider">
 	   <!--Тут будет слайдер-->
 	  </div>
 	  <div class="products">
-	   <div class="products_sites">
+	   <div class="products_item">
 	    <img src="http://placehold.it/150x100">
 		 <h2>Веб-сайты</h2>
-		  <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-		   <button class="btn_sites">Заказать</button>
+		  <p class="simple_text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+		   <a href="#">Заказать</a>
 	   </div>
-	   <div class="products_apps">
+	   <div class="products_item">
 	    <img src="http://placehold.it/150x100">
 	     <h2>Приложения</h2>
-		  <p>Покорите топ-10 приложений в  AppStore и  Google play</p>
-		   <button class="btn_apps">Заказать</button>
+		  <p class="simple_text">Покорите топ-10 приложений в  AppStore и  Google play</p>
+		   <a href="#">Заказать</a>
 	   </div>
-	   <div class="products_presentations">
-	  
+	   <div class="products_item">
 	    <img src="http://placehold.it/150x100">
 	     <h2>Презентации</h2>
-		  <p>Вы даже не подозреваете насколько вы изумительны!</p>
-		   <button class="btn_presentations">Заказать</button>
+		  <p class="simple_text">Вы даже не подозреваете насколько вы изумительны!</p>
+		   <a href="#">Заказать</a>
 	   </div>
 	  </div>
 	   <div class="features">
 	    <div class="about">
 	     <h1>Мы маленькая, но гордая дизайн-студия из Краснодара</h1>
-	      <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
+	      <p class="simple_text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет выше креатива. Работаем не покладая рук, как роботы.</p>
 	    </div>
 		<div class="features_logo">
 		 <img src="http://placehold.it/150x100" alt="«Nёrd`s»">
+		  <div>
+		  since 2004
+		  </div>
 		</div>
-		 <div class="services">
-		  <h2>Выполняем заказы на разработку:</h2>
-		   <ul>
+		<div class="services">
+		  <div class="features_title">Выполняем заказы на разработку:</div>
+		   <ul class="list">
             <li>Веб-сайтов любой сложности</li>
 			<li>Мобильных приложений для IOS и Android</li>
 			<li>Слайдшоу и видео для коропративных презентаций</li>
 		   </ul>
 		 </div>
 		  <div class="conditions">
-		   <h2>Как мы работаем:</h2>
-		    <ul>
+		   <div class="features_title">Как мы работаем:</div>
+		    <ul class="list">
              <li>С самоотдачей 146%</li>
 			 <li>Соблюдая сроки на 100%</li>
 			 <li>По предоплате 50%</li>
@@ -82,25 +85,37 @@
 		   </div>
 	   </div>
 		<div class="clients">
-		<img src="http://placehold.it/150x100">
-		<img src="http://placehold.it/150x100">
-		<img src="http://placehold.it/150x100">
+		 <div class="clients_img">
+		  <img src="http://placehold.it/150x100">
+		 </div>
+		 <div class="clients_img">
+		  <img src="http://placehold.it/150x100">
+		 </div>
+		 <div class="clients_img">
+		  <img src="http://placehold.it/150x100">
+		 </div>
+		</div>
 		</div>
 		<div class="contacts">
-		 <h2>nёrds design studio</h2>
-		  <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+		 <div class="contacts_text">
+		  <h2>nёrds design studio</h2>
+		   <p class="simple_text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 		   <tel> тел. +7(812)275-75-75</tel>
 		    <button class="btn_contacts">Напишите нам</button>
+		 </div>
+		 <div class="contacts_map">
+		 <!--Тут будет карта-->
+		 </div>
 		</div>
 	 </main>
 		<footer class="main_footer">
          <div class="footer_social">
-		  <a class="btn_vk" href="#">Вконтакте</a>
-          <a class="btn_fb" href="#">Фейсбук</a>
-          <a class="btn_inst" href="#">Инстаграм</a>
+		  <a class="social_btn btn_vk" href="#">Вконтакте</a>
+          <a class="social_btn btn_fb" href="#">Фейсбук</a>
+          <a class="social_btn btn_inst" href="#">Инстаграм</a>
 		 </div>
-		 <h1> Давайте дружить, это выгодно!</h1>
-		 <p>Скидка 10% для друзей из социальных сетей.</p>
+		 <div class="footer_text"> Давайте дружить, это выгодно!<div>
+		 <p class="simple_text">Скидка 10% для друзей из социальных сетей.</p>
 		</footer>
   </body>
 </html>
