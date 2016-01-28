@@ -6,10 +6,10 @@
   </head>
   <body>
     <header class="main_header">
-	 <div class="container">
-	 <div class="header_logo">
-        <img src="img/index-logo.png" width="155" height="70" alt="«Nёrd`s»">
-     </div>
+	  <div class="container">
+	    <div class="header_logo">
+          <img src="img/index-logo.png" width="155" height="70" alt="«Nёrd`s»">
+        </div>
         <nav class="main_navigation">
           <ul>
             <li class="main_navigation_item">
@@ -33,114 +33,120 @@
       </div>
     </header>
 	<main>
-	 <div class="container">
-	  <div class="left_column">
-	  <div class="form">
-	  <form action="https://echo.htmlacademy.ru" method="get">
-	   <div class="range">
-	   <p class="left_column_head">Стоимость:</p>
-     <p><input name="cost" type="range"  min="0" max="15000" value="7500"></p>
-	</div>
-	<div class="radio">
-     <p class="left_column_head">Сетка:</p>
-     <p><input name="grid" type="radio" value="adaptive" checked>Адаптивная</p>
-     <p><input name="grid" type="radio" value="fixed"> Фиксированная</p>
-     <p><input name="grid" type="radio" value="rubber">Резиновая</p>
-	</div>
-	<div class="checkbox">
-     <p class="left_column_head">Особенности:</p>
-     <p><input name="slider" type="checkbox" value="on" checked>Слайдер</p>
-     <p><input name="block" type="checkbox" value="off">Блок преимуществ</p>
-     <p><input name="news" type="checkbox" value="on" checked>Новости</p>
-	 <p><input name="gallery" type="checkbox" value="off">Галерея</p>
-	 <p><input name="bucket" type="checkbox" value="off">Корзина</p>
-	 </div>
-	 <div class="btn_submit">
-     <p><input type="submit" value="Показать"></p>
-	 </div>
-	 </form>
-	 </div>
-	</div>
-	  <div class="right_column">
-	   <div class="catalog_menu">
-	   <p class="catalog_menu_head">Сортировать:</p>
-	   <ul>
-          <li class="catalog_menu_item">
-            <a href="#">По цене</a>
-          </li>
-          <li class="catalog_menu_item">
-            <a href="#">По типу</a>
-          </li>
-          <li class="catalog_menu_item">
-            <a href="#">По функционалу</a>
-          </li>
-          <li class="catalog_menu_arrow_down">
-            <a href="#">Вниз</a>
-          </li>
-          <li class="catalog_menu_arrow_up">
-            <a href="#">Вверх</a>
-          </li>
-	   </ul>
+	  <div class="container">
+	    <div class="left_column">
+	      <div class="form">
+	        <form action="https://echo.htmlacademy.ru" method="get">
+	          <div class="range">
+	            <div class="form_title">Стоимость:</div>
+                  <input name="cost" type="range"  min="0" max="15000" value="7500">
+	          </div>
+	          <div class="radio">
+                <div class="form_title">Сетка:</div>
+                <input name="grid" type="radio" value="adaptive" id="adaptive" checked>
+				<label for="adaptive">Адаптивная</label>
+                <input name="grid" type="radio" value="fixed" id="fixed">
+				<label for="fixed">Фиксированная</label>
+                <input name="grid" type="radio" value="rubber" id="rubber">
+				<label for="rubber">Резиновая</label>
+	          </div>
+	          <div class="checkbox">
+                <div class="form_title">Особенности:</div>
+                <input name="slider" type="checkbox" id="slider" checked>
+				<label for="slider">Слайдер</label>
+                <input name="block" type="checkbox" id="block">
+				<label for="block">Блок преимуществ</label>
+                <input name="news" type="checkbox" id="news" checked>
+				<label for="news">Новости</label>
+	            <input name="gallery" type="checkbox" id="gallery">
+				<label for="gallery">Галерея</label>
+	            <input name="bucket" type="checkbox" id="bucket">
+				<label for="bucket">Корзина</label>
+	          </div>
+			  <button type="submit" class="filter_btn">Показать</button>
+	        </form>
+	      </div>
+	    </div>
+	    <div class="right_column">
+	      <div class="catalog_menu">
+	        <div class="catalog_menu_head">Сортировать:</div>
+	        <ul>
+              <li class="catalog_menu_item">
+                <a href="#">По цене</a>
+              </li>
+              <li class="catalog_menu_item">
+                <a href="#">По типу</a>
+              </li>
+              <li class="catalog_menu_item">
+                <a href="#">По функционалу</a>
+              </li>
+              <li class="catalog_menu_arrow_down">
+                <a href="#">Вниз</a>
+              </li>
+              <li class="catalog_menu_arrow_up">
+                <a href="#">Вверх</a>
+              </li>
+	        </ul>
+	      </div>
+	      <div class="catalog">
+	        <div class="catalog_item">
+		      <img src="http://placehold.it/150x100">
+		    </div>
+		    <div class="catalog_item">
+		      <img src="http://placehold.it/150x100">
+		    </div>
+		    <div class="catalog_item">
+		      <img src="http://placehold.it/150x100">
+		    </div>
+		    <div class="catalog_item">
+		      <img src="http://placehold.it/150x100">
+		    </div>
+		    <div class="catalog_item">
+		      <img src="http://placehold.it/150x100">
+		    </div>
+		    <div class="catalog_item">
+		      <img src="http://placehold.it/150x100">
+		    </div>
+		  </div>
+		  <div class="catalog_paginator">
+		    <ul>
+              <li class="catalog__paginator_item">
+                <span>1</span>
+              </li>
+              <li class="catalog__paginator_item">
+                <a href="#">2</a>
+              </li>
+              <li class="catalog__paginator_item">
+                <a href="#">3</a>
+              </li>
+              <li class="catalog__paginator_next">
+                <a href="#">Следующая</a>
+              </li>
+            </ul>
+		</div>
 	   </div>
-	   <div class="catalog">
-	    <div class="catalog_item">
-		<img src="http://placehold.it/150x100">
-		</div>
-		<div class="catalog_item">
-		 <img src="http://placehold.it/150x100">
-		</div>
-		<div class="catalog_item">
-		 <img src="http://placehold.it/150x100">
-		</div>
-		<div class="catalog_item">
-		 <img src="http://placehold.it/150x100">
-		</div>
-		<div class="catalog_item">
-		 <img src="http://placehold.it/150x100">
-		</div>
-		<div class="catalog_item">
-		 <img src="http://placehold.it/150x100">
-		</div>
-		</div>
-		<div class="catalog_paginator">
-		 <ul>
-          <li class="catalog__paginator_item">
-            <a href="#">1</a>
-          </li>
-          <li class="catalog__paginator_item">
-            <a href="#">2</a>
-          </li>
-          <li class="catalog__paginator_item">
-            <a href="#">3</a>
-          </li>
-          <li class="catalog__paginator_next">
-            <a href="#">Следующая</a>
-          </li>
-         </ul>
-		</div>
-	   </div>
-	   </div>
+	 </div>
 	   <div class="contacts">
 		 <div class="contacts_text">
-		  <h2>nёrds design studio</h2>
+		   <h2>nёrds design studio</h2>
 		   <p class="simple_text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 		   <tel> тел. +7(812)275-75-75</tel>
-		    <button class="btn_contacts">Напишите нам</button>
+		   <button class="btn_contacts">Напишите нам</button>
 		 </div>
 		 <div class="contacts_map">
 		 <!--Тут будет карта-->
 		 </div>
-		</div>
-	 </main>
-		<footer class="main_footer">
-         <div class="footer_social">
-		  <a class="social_btn btn_vk" href="#">Вконтакте</a>
-          <a class="social_btn btn_fb" href="#">Фейсбук</a>
-          <a class="social_btn btn_inst" href="#">Инстаграм</a>
-		 </div>
-		 <div class="footer_text"> Давайте дружить, это выгодно!</div>
-		 <p class="simple_text">Скидка 10% для друзей из социальных сетей.</p>
-		</footer>
+	   </div>
+	</main>
+    <footer class="main_footer">
+      <div class="footer_social">
+	    <a class="social_btn btn_vk" href="#">Вконтакте</a>
+        <a class="social_btn btn_fb" href="#">Фейсбук</a>
+        <a class="social_btn btn_inst" href="#">Инстаграм</a>
+	  </div>
+	  <div class="footer_text"> Давайте дружить, это выгодно!</div>
+	  <p class="simple_text">Скидка 10% для друзей из социальных сетей.</p>
+	</footer>
   </body>
 </html>
 	  
