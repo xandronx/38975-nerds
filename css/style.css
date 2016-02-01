@@ -1,3 +1,8 @@
+.clearfix:: after  {
+	content:"";
+	display: "table";
+	clear: "both";
+     }
 body {
 	font-family:"roboto medium" ,arial, verdana, san-serif;
     font-size:15px;
@@ -12,3 +17,30 @@ body {
 	color:000000;
 	font-weight: normal;
 	}
+.main_header  {
+	background-color:eeeeee;
+	
+    } 
+.container  {
+	width: 880px;
+    padding: 0 10px;
+	margin: 0 auto;
+	background-color:ccc9c9;
+    }
+.header_logo  {
+	background-color:a5a2a2;
+	min-height:100px;
+	width:140px;
+	float: left;
+    }
+.main_navigation  {
+	background-color:9456fb;
+	min-height:100px;
+	width:500 px;
+    }
+.user_block  {
+	background-color:fb565a;
+	min-height:100px;
+	width:110 px;
+	
+    }
