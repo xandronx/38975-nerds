@@ -226,13 +226,17 @@ font-size:0px;}
 	
 .catalog_item  {
 	display:inline-block;
-	margin-left:75px;
+	margin-left:80px;
 	margin-bottom:110px;
 	}
 
 .catalog_item:nth-child(odd) {
 	margin-left:0;
     }
+	
+.catalog  {
+	font-size:0;
+	}
 	
 .catalog__paginator  {
 	font-size:0;
@@ -257,3 +261,7 @@ font-size:0px;}
 	margin-left:300px;
     }
 
+	
+.items{
+      float:left;
+}
