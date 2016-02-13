@@ -1,3 +1,4 @@
+
 .clearfix::after  {
 	content:"";
 	display:table;
@@ -81,9 +82,16 @@ color:#000000;
           }
 .main_navigation_item a:hover  {
 	color:#fb565a;
-	 text-decoration:underline;
+	 text-decoration:none;
     }
-	
+.main_navigation_item a:active  {
+	color:#8f8f8f;
+	 text-decoration:none;
+    }
+.main_navigation_item a.active:focus  {
+	color:#8f8f8f;
+	text-decoration:underline;
+    }
 	
 .user_block  {
 	background-color:#eeeeee;
@@ -131,9 +139,11 @@ left:20px;
 	
     }
 	
-	.products {
+.products {
 	background-color:#ffffff;
 	min-height:460px;
+	padding-left:0;
+	padding-right;0;
     }
 	
 .products_item  {
@@ -142,7 +152,7 @@ left:20px;
 	padding:10px;
 	padding-bottom:20px;
 	margin-left:50px;
-	margin-top:80px;
+	margin-top:70px;
 	margin-bottom:80px;
 	float:left;
 	}
@@ -154,16 +164,17 @@ left:20px;
 	font-size:12px;
 	line-height:18px;
     color:#ffffff;
-	padding-top:21px;
-	padding-bottom:21px;
-	padding-left:40px;
-	padding-right:40px;
-	border-radius:15;
+	padding-top:12px;
+	padding-bottom:12px;
+	padding-left:35px;
+	padding-right:35px;
+	border-radius:5px;
     }
 	
 .products_item:first-child {
 	margin-left:0;
 }
+
 	
 .features  {
 	background-color:#cf7474;
@@ -173,8 +184,18 @@ left:20px;
 	width: 575px;
 	background-color:#c5ef1f;
 	float:left;
-	
     }
+.about_title  {
+	font-size:36px;
+	line-height:36px;
+    color:#000000;
+}
+.simple_text  {
+	font-size:15px;
+	line-height:22px;
+    color:#283136;
+}
+
 
 .features_right_column  {
     width: 230px;
@@ -203,7 +224,14 @@ left:20px;
 	margin-left:0;
     }
 	
-.contacts_map  {
+.contacts  {
+	position:relative;
+	
+}
+.contacts_text  {
+	position:absolute;
+	bottom:60px;
+	left:215px;
 	
 }
 .main_footer  {
@@ -232,12 +260,29 @@ left:20px;
 	
 .contacts  {
 background-color:#cf7474;
-	min-height: 415px;
+	min-height: 420px;
 	}
-
+.btn_contacts  {
+	display:inline-block;
+	text-decoration:none;
+	background:#fb565a;
+	font-size:12px;
+	line-height:18px;
+    color:#ffffff;
+	padding-top:12px;
+	margin-top:35px;
+	padding-bottom:12px;
+	padding-left:50px;
+	padding-right:50px;
+	border-radius:5px;
+}
 .contacts_text {
-	width: 250px;
-	background-color:#c5ef1f;
+	display:inline-block;
+	padding-left:23px;
+	padding-right:23px;
+	max-width:200px;
+	height:240px;
+	background-color:#ffffff;
 	margin-top:90px;
 	float:left;
 }
