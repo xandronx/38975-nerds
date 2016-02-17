@@ -4,6 +4,7 @@
     <meta charset="utf-8">
       <title>Дизайн студия «Nёrd`s»</title>
        <link href="http://allfont.ru/allfont.css?fonts=roboto-medium" rel="stylesheet" type="text/css" />
+	   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	  <link href="css/normalize.css" rel="stylesheet" type="text/css">
 	  <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -30,14 +31,44 @@
               </ul>
             </nav>
           <div class="user_block">
-            <a class="bucket" href="#">Корзина</a>
+            <a class="bucket" href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
           </div>  
       </div>
     </header>
 	<main>
 	  <div class="main_slider">
-		<img src="img/slide1.png" width="338" height="231" alt="слайд" align="right">
-	      <!--Тут будет слайдер-->
+	   <input type="radio" id="btn-1" name="toggle" checked>
+        <input type="radio" id="btn-2" name="toggle">
+        <input type="radio" id="btn-3" name="toggle">
+	   <div class="slider_controls">
+	    <label for="btn-1"></label>
+          <label for="btn-2"></label>
+          <label for="btn-3"></label>   
+       </div>
+        <div class="slides">
+		  <div class="slide">
+         <div class="slide_text">
+		  <div class="slide_title">Долго, дорого,<br>скрупулезно</div>
+              <p>Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.</p>
+              <a class="btn" href="#">Узнать больше</a>
+		</div>
+        </div> 
+		 <div class="slide">
+         <div class="slide_text">
+		  <div class="slide_title">Любите ли вы математику,<br> как любим ее мы?</div>
+                           <p>Нашим дизайнерам мы удаляем нейроны, ответственные<br>за креатив, чтобы дать им возможность все просчитать.</p>
+              <a class="btn" href="#">Узнать больше</a>
+		</div>
+        </div> 
+		 <div class="slide">
+         <div class="slide_text">
+		  <div class="slide_title">Только наркотики,<br> только хардкор!</div>
+              <p>Все дизайнерские решения в нашей компании принимаются только под воздействием качественных галлюциногенов.</p>
+              <a class="btn" href="#">Узнать больше</a>
+		</div>
+        </div> 
+		</div> 
+        </div>
 	    </div>
 	  <div class="container">
 	    <div class="products clearfix">
@@ -45,7 +76,7 @@
 	        <img src="img/sites.jpg" width="240" height="124" alt="Веб-сайты">
  	          <h2 class="medium_title">Веб-сайты</h2>
 		      <p class="simple_text">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-			  <div class="btn_buy">
+			  <div class="btn_buy_sites">
 		      <a href="#">Заказать</a>
 			  </div>
 	      </div>
@@ -53,7 +84,7 @@
 	        <img src="img/apps.jpg" width="240" height="124" alt="Приложения">
 	          <h2 class="medium_title">Приложения</h2>
 		      <p class="simple_text">Покорите топ-10 приложений в  AppStore и  Google play</p>
-			  <div class="btn_buy">
+			  <div class="btn_buy_apps">
 		      <a href="#">Заказать</a>
 			  </div>
 	      </div>
@@ -61,7 +92,7 @@
 	        <img src="img/presentations.jpg" width="240" height="124" alt="Презентации">
 	          <h2 class="medium_title">Презентации</h2>
 		      <p class="simple_text">Вы даже не подозреваете насколько вы изумительны!</p>
-			  <div class="btn_buy">
+			  <div class="btn_buy_prez">
 		      <a href="#">Заказать</a>
 			  </div>
 	      </div>
@@ -121,9 +152,12 @@
 	<footer class="main_footer">
 	  <div class="container clearfix">
         <div class="footer_social">
-	      <a class="social_btn btn_vk" href="#">Вконтакте</a>
-          <a class="social_btn btn_fb" href="#">Фейсбук</a>
-          <a class="social_btn btn_inst" href="#">Инстаграм</a>
+	      <a class="social_btn btn_vk" href="#"><i class="fa fa-vk fa-2x"></i>
+</a>
+          <a class="social_btn btn_fb" href="#"><i class="fa fa-facebook fa-2x"></i>
+</a>
+          <a class="social_btn btn_inst" href="#"><i class="fa fa-instagram fa-2x"></i>
+</a>
 	    </div>
 		<div class="footer_right_column">
 	      <div class="footer_text"> Давайте дружить, это выгодно!</div>
