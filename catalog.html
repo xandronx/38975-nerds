@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Дизайн студия «Nёrd`s»</title>
 	<link href="http://allfont.ru/allfont.css?fonts=roboto-medium" rel="stylesheet" type="text/css" />
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -30,7 +31,7 @@
             </ul>
           </nav>
           <div class="user_block">
-            <a class="bucket" href="#">Корзина</a>
+            <a class="bucket" href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
           </div>  
 		  <div class="catalog_title">Добро пожаловать в магазин готовых макетов</div>
       </div>
@@ -41,7 +42,17 @@
 	      <form action="https://echo.htmlacademy.ru" method="get">
 	          <div class="range">
 	            <div class="form_title">Стоимость:</div>
-                  <input name="cost" type="range"  min="0" max="15000" value="7500">
+				<div class="range_controls">
+				 <div class="scale">
+            <div class="bar"></div>
+          </div>
+          <div class="toggle toggle_min"></div>
+          <div class="toggle toggle_max"></div>
+				</div>
+				<div class="price_controls">
+                   <label class="min_price">от <input name="min_price" type="text" value="0"></label>
+          <label class="max_price">до <input name="max_price" type="text" value="15000"></label>
+				</div>
 	          </div>
 	          <div class="radio">
                 <div class="form_title">Сетка:</div>
@@ -82,10 +93,12 @@
                 <a href="#">По функционалу</a>
               </li>
               <li class="catalog_menu_arrow_down">
-                <a href="#">Вниз</a>
+                <a href="#"><i class="fa fa-caret-down fa-2x"></i>
+</a>
               </li>
               <li class="catalog_menu_arrow_up">
-                <a href="#">Вверх</a>
+                <a href="#"><i class="fa fa-caret-up fa-2x"></i>
+</a>
               </li>
 	        </ul>
 	      </div>
@@ -144,9 +157,12 @@
 	<footer class="main_footer">
 	  <div class="container clearfix">
         <div class="footer_social">
-	      <a class="social_btn btn_vk" href="#">Вконтакте</a>
-          <a class="social_btn btn_fb" href="#">Фейсбук</a>
-          <a class="social_btn btn_inst" href="#">Инстаграм</a>
+	      <a class="social_btn" href="#"><i class="fa fa-vk fa-2x"></i>
+</a>
+          <a class="social_btn" href="#"><i class="fa fa-facebook fa-2x"></i>
+</a>
+          <a class="social_btn" href="#"><i class="fa fa-instagram fa-2x"></i>
+</a>
 	    </div>
 		<div class="footer_right_column">
 	      <div class="footer_text"> Давайте дружить, это выгодно!</div>
