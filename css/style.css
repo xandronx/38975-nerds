@@ -525,7 +525,7 @@ background-color:#eeeeee;
     }
 	
 .contacts  {
-background-color:#cf7474;
+background-color:#ffffff;
 	min-height: 420px;
 	}
 .btn_contacts  {
@@ -729,7 +729,23 @@ font-size:0px;}
 	padding-left:30px;
 	margin-bottom:50px;
 	color:#c1c1c1;
-    }
+}
+	
+.fa-caret-down {
+	color:#c1c1c1;	
+}
+
+.fa-caret-down:active {
+	color:#000000;	
+}
+
+.fa-caret-up {
+	color:#c1c1c1;	
+}
+   
+.fa-caret-up:active {
+	color:#000000;	
+}
 	
 .catalog_menu_arrow_up  {
     display:inline-block;
@@ -737,13 +753,25 @@ font-size:0px;}
 	 line-height:18px;
 	padding-left:30px;
 	margin-bottom:50px;
+	color:#c1c1c1;
     }
 	
+.catalog img  {
+	position:absolute;
+	display:inline-block;
+	margin-top:30px;
+	}
 .catalog_item  {
 	display:inline-block;
+	background-color:#f1f1f1;
+	height:240px;
+	width:240px;
 	margin-left:80px;
 	margin-bottom:110px;
-	}
+	border-radius:3px;
+}
+
+
 
 .catalog_item:nth-child(odd) {
 	margin-left:0;
@@ -992,7 +1020,7 @@ font-size:0px;}
 	display:inline-block;
 	position:absolute;
 	top: 50px;
-    right:90px;
+    right:230px;
 }
 .form_title_text {
 	display:inline-block;
