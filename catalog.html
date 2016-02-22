@@ -170,6 +170,37 @@
 		</div>
 	  </div>
 	</footer>
+	<div class="popup">
+      <button class="popup_close" type="button" title="Закрыть"><i class="fa fa-times-circle fa-3x"></i>
+</button>
+  <form  class="feedback" action="https://echo.htmlacademy.ru" method="get">
+	         
+                <div class="form_title_name"><label for="name">Ваше имя:</label></div>
+                <input class="form_name" name="name" type="text" value="представьтесь, пожалуйста" id="name" >
+                <div class="form_title_mail"><label for="mail">Ваш e-mail:</label></div>
+                <input class="form_mail" name="mail" type="text" value="для отправки ответа" id="mail">
+                <div class="form_title_text"><label for="text">Текст письма:</label></div>
+                <input class="form_text" name="text" type="text" value="в свободной форме" id="text">
+			 
+			  <button type="submit" class="form_btn">Отправить</button>
+	        </form>
+    </div>
+	<script type="text/javascript">
+	var link = document.querySelector(".btn_contacts");
+	var popup = document.querySelector(".popup");
+	var close = popup.querySelector(".popup_close");
+	var login = popup.querySelector(".form_name");
+	var form = popup.querySelector(".feedback");
+	link.addEventListener("click", function(event) {
+	event.preventDefault();
+	popup.classList.add("popup_show");
+	login.focus();
+    });
+	close.addEventListener("click", function(event) {
+    event.preventDefault();
+    popup.classList.remove("popup_show");
+    });
+    </script>
   </body>
 </html>
 	  
