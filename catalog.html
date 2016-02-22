@@ -3,8 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн студия «Nёrd`s»</title>
-	<link href="http://allfont.ru/allfont.css?fonts=roboto-medium" rel="stylesheet" type="text/css" />
-	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:500,300" rel="stylesheet" type="text/css">
 	<link href="css/normalize.css" rel="stylesheet" type="text/css">
 	<link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
@@ -12,7 +11,7 @@
     <header class="main_header">
 	  <div class="container clearfix">
 	     <div class="header_logo">
-          <img src="img/logo.png" width="139" height="56" alt="«Nёrd`s»">
+         <a href="index.html"> <img src="img/logo.png" width="139" height="56" alt="«Nёrd`s»"></a>
         </div>
 		<nav class="main_navigation">
           <ul>
@@ -31,7 +30,7 @@
             </ul>
           </nav>
           <div class="user_block">
-            <a class="bucket" href="#"><i class="fa fa-shopping-cart"></i>Корзина</a>
+            <a class="bucket" href="#"><i class="icon-basket"></i>Корзина</a>
           </div>  
 		  <div class="catalog_title">Добро пожаловать в магазин готовых макетов</div>
       </div>
@@ -40,20 +39,22 @@
 	  <div class="container clearfix">
 	    <div class="left_column">
 	      <form action="https://echo.htmlacademy.ru" method="get">
-	          <div class="range">
 	            <div class="form_title">Стоимость:</div>
+				<div class="range_filter">
 				<div class="range_controls">
 				 <div class="scale">
             <div class="bar"></div>
           </div>
-          <div class="toggle toggle_min"></div>
+		  <div class="toggle toggle_min"></div>
           <div class="toggle toggle_max"></div>
 				</div>
 				<div class="price_controls">
-                   <label class="min_price">от <input name="min_price" type="text" value="0"></label>
-          <label class="max_price">до <input name="max_price" type="text" value="15000"></label>
+				 <label class="min_price">от<input name="min_price" type="text" value="0"></label>
+          <label class="max_price">до<input name="max_price" type="text" value="15000"></label>
 				</div>
-	          </div>
+				
+				</div>
+	          
 	          <div class="radio">
                 <div class="form_title">Сетка:</div>
                 <input class="form_radio" name="grid" type="radio" value="adaptive" id="adaptive" checked>
@@ -80,7 +81,7 @@
 	        </form>
 	    </div>
 	    <div class="right_column">
-	      <div class="catalog_menu">
+	      <div class="catalog_menu clearfix">
 	        <div class="catalog_menu_head">Сортировать:</div>
 	        <ul class= "items">
               <li class="catalog_menu_item">
@@ -93,11 +94,11 @@
                 <a href="#">По функционалу</a>
               </li>
               <li class="catalog_menu_arrow_down">
-                <a href="#"><i class="fa fa-caret-down fa-2x"></i>
+                <a href="#"><i class="icon-down-dir"></i>
 </a>
               </li>
               <li class="catalog_menu_arrow_up">
-                <a href="#"><i class="fa fa-caret-up fa-2x"></i>
+                <a href="#"><i class="icon-up-dir"></i>
 </a>
               </li>
 	        </ul>
@@ -160,11 +161,11 @@
 	<footer class="main_footer">
 	  <div class="container clearfix">
         <div class="footer_social">
-	      <a class="social_btn" href="#"><i class="fa fa-vk fa-2x"></i>
+	      <a class="social_btn" href="#"><i class="icon-vk"></i>
 </a>
-          <a class="social_btn" href="#"><i class="fa fa-facebook fa-2x"></i>
+          <a class="social_btn" href="#"><i class="icon-facebook"></i>
 </a>
-          <a class="social_btn" href="#"><i class="fa fa-instagram fa-2x"></i>
+          <a class="social_btn" href="#"><i class="icon-instagramm"></i>
 </a>
 	    </div>
 		<div class="footer_right_column">
